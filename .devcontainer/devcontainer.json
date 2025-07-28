@@ -1,0 +1,17 @@
+{
+    "name": "Skull King League DevContainer",
+    "dockerComposeFile": "docker-compose.yml",
+    "service": "web",
+    "workspaceFolder": "/var/www/html",
+    "forwardPorts": [8080, 3306],
+    "postCreateCommand": "bash setup.sh || ./setup.sh",
+    "customizations": {
+        "vscode": {
+            "settings": {
+                "terminal.integrated.shell.linux": "/bin/bash"
+            }
+        }
+    },
+    "features": {},
+    "remoteUser": "root"
+}
