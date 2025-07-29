@@ -1,6 +1,6 @@
 <?php
 class Database {
-    private $host = 'localhost';
+    private $host = 'db';
     private $db_name = 'skull_king_league';
     private $username = 'skullking_user';
     private $password = 'SkullKing_2025!';

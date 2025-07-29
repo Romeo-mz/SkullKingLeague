@@ -1,4 +1,3 @@
-version: '3.8'
 services:
   web:
     build:
@@ -6,8 +5,6 @@ services:
       dockerfile: .devcontainer/Dockerfile
     ports:
       - "8080:80"
-    volumes:
-      - ../:/var/www/html
     depends_on:
       - db
   db:
@@ -15,12 +12,6 @@ services:
     restart: unless-stopped
     environment:
       MYSQL_ROOT_PASSWORD: root
-      MYSQL_DATABASE: skullking
-      MYSQL_USER: skullking
-      MYSQL_PASSWORD: skullking
-    ports:
-      - "3306:3306"
-    volumes:
-      - db_data:/var/lib/mysql
-volumes:
-  db_data:
+      MYSQL_DATABASE: skull_king_league
+      MYSQL_USER: skullking_user
+      MYSQL_PASSWORD: SkullKing_2025!

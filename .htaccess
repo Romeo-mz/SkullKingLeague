@@ -24,18 +24,6 @@ RewriteRule ^(.*)$ public/index.php [QSA,L]
     Deny from all
 </Files>
 
-# Permettre l'accès aux assets
-<Directory "assets">
-    Order allow,deny
-    Allow from all
-</Directory>
-
-# Permettre l'accès au dossier public
-<Directory "public">
-    Order allow,deny
-    Allow from all
-</Directory>
-
 # Headers de sécurité
 <IfModule mod_headers.c>
     Header always set X-Content-Type-Options nosniff
